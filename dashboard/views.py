@@ -1,6 +1,7 @@
 from django.db import models
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, View
+
 from .models import Sector, KPI, Umuryango
 from django.db.models import Sum, Count, F
 
@@ -48,9 +49,12 @@ class KPIDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(KPIDetailView, self).get_context_data(**kwargs)
-        # context['performance_kpi_sectors'] = Result.objects.filter(kpi_id=self.kwargs['pk'])
         context['kpis'] = KPI.objects.all()
-        # context['current_kpi'] = Result.objects.filter(kpi_id=self.kwargs['pk']).values_list('kpi__name').distinct()
+        context['current_kpi'] = Umuryango.objects.filter(kpi_id=self.kwargs['pk'])\
+                                          .values('kpi__name').annotate(targ=Sum('target'))\
+                                          .annotate(achiev=Sum('achieved'))\
+                                          .distinct()
+
         return context
 
 
@@ -69,3 +73,20 @@ class Ibyakozwe(ListView):
         return context
 
 
+class District_chartView(View):
+    def get(self, request, pk):
+        dataset = Umuryango.objects.values('kpi__name', 'sector__name').annotate(targ=Sum('target')) \
+                           .annotate(achiev=Sum('achieved'))\
+                           .filter(kpi_id=self.kwargs['pk'])\
+                           .order_by('target')
+        return render(request, 'dashboard/kpi_detail.html', {'dataset': dataset})
+
+
+class Sector_chartView(View):
+    def get(self, request):
+        dataset = Umuryango.objects.values('kpi__name').annotate(targ=Sum('target')) \
+                           .annotate(achiev=Sum('achieved')) \
+                           .filter(sector=self.request.user.user_profile.sector) \
+                           .order_by('target')
+
+        return render(request, 'dashboard/kpi_detail.html', {'dataset': dataset})
