@@ -80,8 +80,6 @@
 <script src="https://code.highcharts.com/highcharts.src.js"></script>
 <script>
     Highcharts.chart('container',{
-
-
         chart: {
             type: 'column'
         },
@@ -90,21 +88,19 @@
         },
         xAxis: {
             categories: [
-            {% for item in current_kpi %}' {{item.kpi__name}}'{% if not forloop.last%},{%endif%}{% endfor %}
+            {% for item in dataset %}'{{item.sector__name}} sector {{item.kpi__name}}'{% if not forloop.last%},{%endif%}{% endfor %}
             ]
         },
         series: [{
             name: 'Ibyakozwe',
-
             data: [
-            {%for item in current_kpi %}{{item.achiev}}{%if not forloop.last %},{% endif %}{%endfor%}
+            {%for item in dataset %}{{item.achiev}}{%if not forloop.last %},{% endif %}{%endfor%}
             ],
             color: 'green'
         }, {
-            name: 'Ibitarakorwa',
-
+            name: 'Ibitarakorwa' ,
             data: [
-            {% for item in current_kpi %}{{ item.targ}}{% if not forloop.last%},{%endif%}{%endfor%}
+            {% for item in dataset %}{{ item.targ}}{% if not forloop.last%},{%endif%}{%endfor%}
             ],
             color: 'red'
         }]
