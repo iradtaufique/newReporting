@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .views import DashboardView, KPIDetailView, Ibyakozwe
+from .views import DashboardView, KPIDetailView, Ibyakozwe, District_chartView, Sector_chartView
 
 urlpatterns = [
     path('', DashboardView.as_view(), name='dashboard'),
@@ -8,4 +8,6 @@ urlpatterns = [
     path('ibisigaye/<int:pk>', Ibyakozwe.as_view(), name='ibisigaye'),
     path('ibyakozwe_sector/<int:pk>', Ibyakozwe.as_view(), name='ibyakozwe_sector'),
     path('ibisigaye_sector/<int:pk>', Ibyakozwe.as_view(), name='ibisigaye_sector'),
+    path('kpi/charts/<int:pk>', District_chartView.as_view(), name='kpi_charts'),
+    path('sector_chart/charts', Sector_chartView.as_view(), name='sector_charts'),
 ]
