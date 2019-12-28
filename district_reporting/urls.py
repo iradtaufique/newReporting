@@ -24,4 +24,5 @@ urlpatterns = [
     path('dashboard/', include('dashboard.urls')),
     path('agriculture/', include('agriculture.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('report/', include('report.urls')),
 ]
