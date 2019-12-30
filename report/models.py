@@ -28,7 +28,7 @@ class ReportType(models.Model):
     igihe_itangirwa = models.PositiveSmallIntegerField(choices=TIME_CHOICES)
     owner = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     department = models.ForeignKey(Department, on_delete=models.CASCADE)
-    deadline = models.DateField(default=geting_date)
+    deadline = models.DateTimeField(auto_now_add=True)
 
 
     def notify(self):
