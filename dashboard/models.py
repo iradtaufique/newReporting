@@ -36,7 +36,7 @@ class Sector(models.Model):
 ###################################
 
 class Department(models.Model):
-    name=models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
 
     class Meta:
         verbose_name='Department'
@@ -91,9 +91,15 @@ class Umuryango(models.Model):
     TARGET = 1
     R1_CHOICES = ((TARGET, 1), (TARGET, 1))
 
+    ONE = 1
+    TWO = 2
+    THREE = 3
+    FOUR = 4
+    IKICIRO = ((ONE, 1), (TWO, 2), (THREE, 3), (FOUR, 4))
+
     name = models.CharField(max_length=200)
     number_of_member = models.PositiveIntegerField()
-    icyiciro = models.PositiveIntegerField()
+    icyiciro = models.PositiveIntegerField(choices=IKICIRO)
     irangamuntu = models.BigIntegerField()
     kpi = models.ForeignKey(KPI, on_delete=models.CASCADE, default=None, related_name='kpi_name')
     target = models.PositiveSmallIntegerField(choices=R1_CHOICES, default=1)
@@ -107,10 +113,7 @@ class Umuryango(models.Model):
         return self.name
 
 
-# class Umuryang(models.Model):
-#     name = models.CharField(max_length=200)
-#     kpi = models.ForeignKey(KPI, on_delete=models.CASCADE)
-#     status = models.BooleanField(default=False)
+
 
 
 

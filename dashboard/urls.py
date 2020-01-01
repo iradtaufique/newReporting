@@ -1,5 +1,6 @@
 from django.urls import path, include
-from .views import DashboardView, KPIDetailView, Ibyakozwe, District_chartView, Sector_chartView
+from .views import DashboardView, KPIDetailView, Ibyakozwe, District_chartView, Sector_chartView, CreateFamily, \
+    change_status, AddKpi
 
 urlpatterns = [
     path('', DashboardView.as_view(), name='dashboard'),
@@ -9,5 +10,9 @@ urlpatterns = [
     path('ibyakozwe_sector/<int:pk>', Ibyakozwe.as_view(), name='ibyakozwe_sector'),
     path('ibisigaye_sector/<int:pk>', Ibyakozwe.as_view(), name='ibisigaye_sector'),
     path('kpi/charts/<int:pk>', District_chartView.as_view(), name='kpi_charts'),
-    path('sector_chart/charts', Sector_chartView.as_view(), name='sector_charts'),
+    path('sector_chart/charts/<int:pk>', Sector_chartView.as_view(), name='sector_charts'),
+    path('add_family', CreateFamily.as_view(), name='family'),
+    path('add_kpi', AddKpi.as_view(), name='add_kpi'),
+    path('status/<int:fam_id>', change_status, name='status'),
+
 ]

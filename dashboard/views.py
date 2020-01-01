@@ -1,8 +1,10 @@
+from django.contrib import messages
 from django.db import models
-from django.shortcuts import render
-from django.views.generic import ListView, DetailView, View
+from django.shortcuts import render, redirect, get_object_or_404
+from django.views.generic import ListView, DetailView, View, CreateView
 
-from .models import Sector, KPI, Umuryango
+from .forms import FamilyForm, AddKpiForm
+from .models import Sector, KPI, Umuryango, Cell
 from django.db.models import Sum, Count, F
 
 
@@ -50,10 +52,12 @@ class KPIDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super(KPIDetailView, self).get_context_data(**kwargs)
         context['kpis'] = KPI.objects.all()
-        context['current_kpi'] = Umuryango.objects.filter(kpi_id=self.kwargs['pk'])\
+        context['current_kpiii'] = Umuryango.objects.filter(kpi_id=self.kwargs['pk'])\
                                           .values('kpi__name').annotate(targ=Sum('target'))\
                                           .annotate(achiev=Sum('achieved'))\
                                           .distinct()
+
+
 
         return context
 
@@ -83,10 +87,42 @@ class District_chartView(View):
 
 
 class Sector_chartView(View):
-    def get(self, request):
+    def get(self, request, pk):
         dataset = Umuryango.objects.values('kpi__name').annotate(targ=Sum('target')) \
                            .annotate(achiev=Sum('achieved')) \
+                           .filter(kpi_id=self.kwargs['pk']) \
                            .filter(sector=self.request.user.user_profile.sector) \
                            .order_by('target')
 
         return render(request, 'dashboard/kpi_detail.html', {'dataset': dataset})
+
+# view for add new family
+class CreateFamily(CreateView):
+    model = Umuryango
+    form_class = FamilyForm
+    template_name = 'umuryango/add_data_form.html'
+
+    def form_valid(self, form):
+        fam = form.save(commit=False)
+        fam.save()
+        messages.success(self.request, 'Family  created successfully.')
+        return redirect('dashboard')
+
+
+# view for changing status to 1
+def change_status(request, fam_id):
+    Umuryango.objects.filter(sector=request.user.user_profile.sector, pk=fam_id).update(achieved=1)
+    messages.success(request, 'Status changed Successfully.')
+    return redirect('dashboard')
+
+
+class AddKpi(CreateView):
+    model = KPI
+    form_class = AddKpiForm
+    template_name = 'umuryango/add_data_form.html'
+
+    def form_valid(self, form):
+        kpiform = form.save(commit=False)
+        kpiform.save()
+        messages.success(self.request, 'KPI created successfully.')
+        return redirect('dashboard')

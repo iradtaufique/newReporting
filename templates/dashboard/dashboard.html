@@ -2,6 +2,19 @@
 {% load mathfilters %}
 
 {% block content %}
+
+    <div class="overdue container">
+    {% for message in messages %}
+        <div class="alert {{ message.tags }} alert-dismissible fade show " role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      {% endfor %}
+    </div>
+
+
   <!-- Client Section-->
   <section class="client no-padding-top">
     <div class="container-fluid">
@@ -67,7 +80,7 @@
                   <div class="overdue card">
                       <div class="card-body">
                         <h5>{{foo.kpi__name}} &nbsp; &nbsp; <small class="font-weight-bold mr-2"></small>
-                            <small class="font-weight-bold"><a href="{% url 'sector_charts'%}">View Graph</a></small>
+                            <small class="font-weight-bold"><a href="{% url 'sector_charts' foo.kpi_id %}">View Graph</a></small>
                         </h5>
                         <div class="statistics col-lg-12 col-12">
                             <div class="statistic d-flex justify-content-between bg-white has-shadow py-2">

@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+from django.contrib.messages import constants as messages
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -137,6 +139,7 @@ STATICFILES_FINDERS = [
 ]
 
 LOGIN_REDIRECT_URL = 'dashboard'
+CHANGE_STATUS_REDIRECT_URL = 'ibisigaye'
 LOGOUT_REDIRECT_URL = 'login'
 
 # Crispy forms
@@ -151,3 +154,12 @@ EMAIL_HOST_PASSWORD = 'pythondjango127'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-secondary',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}

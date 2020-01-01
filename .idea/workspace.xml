@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="609dca8d-dc85-4690-8b6c-7e9a0ab61b72" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="609dca8d-dc85-4690-8b6c-7e9a0ab61b72" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/district_reporting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/district_reporting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/district_reporting/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/district_reporting/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/umuryango/ibyakozwe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/umuryango/ibyakozwe.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -14,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -23,10 +49,16 @@
   </component>
   <component name="ProjectId" id="1TrJtpM7oqPkHJZYwYqZrawaeis" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../urimasfinal/urimasproject" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,18 +75,6 @@
       <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="district_reporting" type="Python.DjangoServer" factoryName="Django server">
       <module name="district_reporting" />
@@ -62,6 +82,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="district_reporting.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -80,6 +101,18 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -95,6 +128,7 @@
       <workItem from="1574265889996" duration="694000" />
       <workItem from="1574267700776" duration="5419000" />
       <workItem from="1574318161749" duration="1614000" />
+      <workItem from="1577776795577" duration="41254000" />
     </task>
     <servers />
   </component>
@@ -113,6 +147,52 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577777249049">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1577777249049" />
+    <state x="496" y="40" key="#district_reporting" timestamp="1577777756563">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="496" y="40" key="#district_reporting/0.0.1536.864@0.0.1536.864" timestamp="1577777756563" />
+    <state x="504" y="224" key="FileChooserDialogImpl" timestamp="1577778100253">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="504" y="224" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1577778100253" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1577897527061">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1577897527061" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1577897527060">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1577897527060" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1577897527060">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1577897527060" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1577897527060">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1577897527060" />
+    <state x="233" y="112" key="SettingsEditor" timestamp="1577777514382">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="233" y="112" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1577777514382" />
+    <state x="470" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1577776912470">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="470" y="257" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1577776912470" />
+    <state x="510" y="76" key="refactoring.ChangeSignatureDialog" timestamp="1577869529243">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="510" y="76" key="refactoring.ChangeSignatureDialog/0.0.1536.864@0.0.1536.864" timestamp="1577869529243" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1577873990057">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1577873990057" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
