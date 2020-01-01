@@ -1,0 +1,12 @@
+<option value="">---------</option>
+{% for cel in cell %}
+<option value="{{ cel.pk }}">{{ cel.name }}</option>
+{% endfor %}
+
+{#{% for department in departments %}#}
+{#<option value="{{ department.pk }}">{{ department.name }}</option>#}
+{#{% endfor %}#}
+{##}
+{#{% for role in roles %}#}
+{#<option value="{{ role.pk }}">{{ role.name }}</option>#}
+{#{% endfor %}#}

@@ -2,6 +2,12 @@ from django.db import models
 import datetime
 from django.core.validators import MaxValueValidator, MinValueValidator
 
+ICYICIRO = (
+    ('', 'Choose...'),
+    ('one', '1'),
+    ('two', '2'),
+    ('three', '3')
+)
 
 def current_year():
     return datetime.date.today().year
