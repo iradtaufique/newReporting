@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="609dca8d-dc85-4690-8b6c-7e9a0ab61b72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard/dropdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard/dropdown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/umuryango/add_data_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/umuryango/add_data_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +128,8 @@
       <workItem from="1574265889996" duration="694000" />
       <workItem from="1574267700776" duration="5419000" />
       <workItem from="1574318161749" duration="1614000" />
-      <workItem from="1577776795577" duration="42830000" />
+      <workItem from="1577776795577" duration="43001000" />
+      <workItem from="1577951618160" duration="8118000" />
     </task>
     <task id="LOCAL-00001" summary="allow user to add family and kpi in backend and allow user to change status">
       <created>1577898635615</created>
@@ -177,30 +186,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="504" y="224" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1577778100253" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1577898809170">
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1577972643466">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1577898809170" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1577898809170">
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1577972643466" />
+    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1577972643466">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1577898809170" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1577898809170">
+    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1577972643466" />
+    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1577972643466">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1577898809170" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1577898809170">
+    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1577972643466" />
+    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1577972643466">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1577898809170" />
+    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1577972643466" />
     <state x="233" y="112" key="SettingsEditor" timestamp="1577777514382">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="233" y="112" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1577777514382" />
-    <state x="470" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1577776912470">
+    <state x="470" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1577951788957">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="470" y="257" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1577776912470" />
+    <state x="470" y="257" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1577951788957" />
     <state x="578" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577898656401">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

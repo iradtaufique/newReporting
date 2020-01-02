@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import ListView, DetailView, View, CreateView
 
 from .forms import FamilyForm, AddKpiForm
-from .models import Sector, KPI, Umuryango, Cell
+from .models import Sector, KPI, Umuryango, Cell, Village
 from django.db.models import Sum, Count, F
 
 
@@ -107,6 +107,29 @@ class CreateFamily(CreateView):
         fam.save()
         messages.success(self.request, 'Family  created successfully.')
         return redirect('dashboard')
+
+
+##############################view for loading cells based sector #########################################
+def load_cells(request):
+    sector_id = request.GET.get('sector')
+    cells = Cell.objects.filter(sector_id=sector_id).order_by('name')
+    return render(request, 'dashboard/dropdown.html', {'cells': cells})
+
+
+###############################view for loading village Based on cells ####################################
+def load_village(request):
+    cell_id = request.GET.get('cell')
+    villages = Village.objects.filter(cell_id=cell_id).order_by('name')
+    return render(request, 'dashboard/dropdown.html', {'villages': villages})
+
+
+
+
+
+
+
+
+
 
 
 # view for changing status to 1

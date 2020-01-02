@@ -13,5 +13,6 @@ django-crispy-forms = "*"
 django-mathfilters = "*"
 apscheduler = "*"
 
+
 [requires]
 python_version = "3.8"

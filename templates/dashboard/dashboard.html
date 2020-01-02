@@ -158,6 +158,9 @@
     </div>
   </section>
 
+{% for cel in cells %}
+<option value="{{ cel.pk }}">{{ cel.name }}</option>
+{% endfor %}
 
  {% endblock %}
 

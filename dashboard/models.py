@@ -112,7 +112,7 @@ class Umuryango(models.Model):
     achieved = models.PositiveSmallIntegerField(choices=R_CHOICES, default=0)
     sector = models.ForeignKey(Sector, on_delete=models.CASCADE)
     cell = models.ForeignKey(Cell, on_delete=models.CASCADE)
-    umudugudu = models.ForeignKey(Village, on_delete=models.CASCADE, related_name='village_cell')
+    village = models.ForeignKey(Village, on_delete=models.CASCADE, related_name='village_cell')
 
 
     def __str__(self):
