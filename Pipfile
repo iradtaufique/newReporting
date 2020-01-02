@@ -12,7 +12,7 @@ psycopg2-binary = "*"
 django-crispy-forms = "*"
 django-mathfilters = "*"
 apscheduler = "*"
-
+arrow = "*"
 
 [requires]
 python_version = "3.8"

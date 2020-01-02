@@ -4,7 +4,6 @@ from django.apps import AppConfig
 class ReportConfig(AppConfig):
     name = 'report'
 
-
-    def ready(self):
+    def ready(deadline):
         from report import scheduler
-        scheduler.start()
+        scheduler.start(deadline)
