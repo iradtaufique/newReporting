@@ -17,7 +17,7 @@
                   <th>AKAGALI</th>
                   <th>UMUDUGUDU</th>
                   <th>KPI Name</th>
-                  <th>Change Status</th>
+{#                  <th>Change Status</th>#}
                 </tr>
               </thead>
               <tbody>
@@ -29,7 +29,7 @@
                       <td class="align-middle">{{ i.irangamuntu }} </td>
                       <td class="align-middle">{{ i.sector }} </td>
                       <td class="align-middle">{{ i.cell }} </td>
-                      <td class="align-middle">{{ i.umudugudu }} </td>
+                      <td class="align-middle">{{ i.village }} </td>
                       <td class="align-middle">{{ i.kpi }} </td>
 {#                      <td class="align-middle"><a href="{% url 'status' i.id %}" class="btn btn-outline-success btn-sm">Change</a> </td>#}
                     </tr>
@@ -58,7 +58,7 @@
                   <th>AKAGALI</th>
                   <th>UMUDUGUDU</th>
                   <th>KPI Name</th>
-                  <th>Change Status</th>
+{#                  <th>Change Status</th>#}
                 </tr>
               </thead>
               <tbody>
@@ -70,13 +70,13 @@
                       <td class="align-middle">{{ i.irangamuntu }} </td>
                       <td class="align-middle">{{ i.sector }} </td>
                       <td class="align-middle">{{ i.cell }} </td>
-                      <td class="align-middle">{{ i.umudugudu }} </td>
+                      <td class="align-middle">{{ i.village }} </td>
                       <td class="align-middle">{{ i.kpi }} </td>
-                      <td class="align-middle"><a href="{% url 'status' i.id %}" class="btn btn-outline-success btn-sm">Change</a> </td>
+{#                      <td class="align-middle"><a href="{% url 'status' i.id %}" class="btn btn-outline-success btn-sm">Change</a> </td>#}
                     </tr>
                     {% empty %}
                     <tr>
-                      <td class="text-center font-italic" colspan="8">No Information Provided Yet</td>
+                      <td class="text-center font-italic" colspan="7">No Information Provided Yet</td>
                     </tr>
                 {% endfor %}
               </tbody>
@@ -109,7 +109,7 @@
                       <td class="align-middle">{{ i.irangamuntu }} </td>
                       <td class="align-middle">{{ i.sector }} </td>
                       <td class="align-middle">{{ i.cell }} </td>
-                      <td class="align-middle">{{ i.umudugudu }} </td>
+                      <td class="align-middle">{{ i.village }} </td>
                       <td class="align-middle">{{ i.kpi }} </td>
                     </tr>
                     {% empty %}
@@ -149,7 +149,7 @@
                       <td class="align-middle">{{ i.irangamuntu }} </td>
                       <td class="align-middle">{{ i.sector }} </td>
                       <td class="align-middle">{{ i.cell }} </td>
-                      <td class="align-middle">{{ i.umudugudu }} </td>
+                      <td class="align-middle">{{ i.village }} </td>
                       <td class="align-middle">{{ i.kpi }} </td>
                       <td class="align-middle"><a href="{% url 'status' i.id %}" class="btn btn-outline-success btn-sm">Change</a> </td>
                     </tr>

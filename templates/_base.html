@@ -274,13 +274,13 @@
 
                {#snippets for adding data #}
 
-                <li><a href="#adddata" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Add User</a>
-                  <ul id="adddata" class="collapse list-unstyled ">
-                      <li><a href="{% url 'family' %}">Add Family</a></li>
-                      <li><a href="{% url 'add_kpi' %}">Add KPI</a></li>
-
-                  </ul>
-                </li>
+{#                <li><a href="#adddata" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Add User</a>#}
+{#                  <ul id="adddata" class="collapse list-unstyled ">#}
+{#                      <li><a href="{% url 'family' %}">Add Family</a></li>#}
+{#                      <li><a href="{% url 'add_kpi' %}">Add KPI</a></li>#}
+{##}
+{#                  </ul>#}
+{#                </li>#}
 
               <!--------------------- when user_profile.role is from each sector ------------------>
                 {% else %}
@@ -296,115 +296,115 @@
                 </li>
 
                 <!--Dropdown list for Agriculture & Animal Sector-->
-                <li><a href="#agricultureandanimal" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i><b style="font-weight: 700;">Agriculture & Animal Sector</b></a>
-                  <ul id="agricultureandanimal" class="collapse list-unstyled ">
-                      <li><a href="{% url 'crop_sector'%}">Crops</a></li>
-                      <li><a href="{% url 'seed_sector' %}">Seeds</a></li>
-                      <li><a href="{% url 'ubwanikiro_sector' %}">Ubwanikiro</a></li>
-                      <li><a href="{% url 'terrassis_sector' %}">Unused Terassis construction for soil erosion </a></li>
-                      <li><a href="{% url 'banana_sector' %}">Banana Rehabilitation cultivated and fertilised</a></li>
-                      <li><a href="{% url 'improved_seed_sector' %}">AGRICULTURAL INPUTS MINERAL FERTILISER&IMPROVED SEEDS</a></li>
-                      <li><a href="{% url 'insemination_sector' %}">Insemination</a></li>
-                      <li><a href="{% url 'inkazizakurikiranwa_sector' %}">Inka Zizakurikiranwa</a></li>
-                      <li><a href="{% url 'girinka_sector' %}">Girinka</a></li>
-                      <li><a href="{% url 'training_sector' %}">Trainings</a></li>
-                      <li><a href="{% url 'fertilizer_sector' %}">Fertilizer</a></li>
-                      <li><a href="{% url 'vaccination_sector' %}">Vaccination</a></li>
-                      <li><a href="{% url 'irrigated_sector' %}">Irrigation</a></li>
-                      <li><a href="{% url 'number_of_pump_sector' %}">Number of Pumps</a></li>
-                      <li><a href="{% url 'imihigo_sector' %}">Imihigo</a></li>
-                  </ul>
-                </li>
-
-                <!--Dropdown list for Private Sector Development-->
-                <li><a href="#privatesector" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Private Sector Development</a>
-                  <ul id="privatesector" class="collapse list-unstyled ">
-                    <li><a href="#">Data Entry</a></li>
-                    <li><a href="#">View Data</a></li>
-                    <li><a href="#">Consolidated Report</a></li>
-                    <li><a href="#">Charts</a></li>
-                  </ul>
-                </li>
-
-                <!--Dropdown list for Energy Sector-->
-                <li><a href="#energysector" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Energy Sector</a>
-                  <ul id="energysector" class="collapse list-unstyled ">
-                    <li><a href="#">Data Entry</a></li>
-                    <li><a href="#">View Data</a></li>
-                    <li><a href="#">Consolidated Report</a></li>
-                    <li><a href="#">Charts</a></li>
-                  </ul>
-                </li>
-
-                <!--Dropdown list for Social Protection-->
-                <li><a href="#socialprotection" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Social Protection</a>
-                  <ul id="socialprotection" class="collapse list-unstyled ">
-                    <li><a href="#">Data Entry</a></li>
-                    <li><a href="#">View Data</a></li>
-                    <li><a href="#">Consolidated Report</a></li>
-                    <li><a href="#">Charts</a></li>
-                  </ul>
-                </li>
-
-                <!--Dropdown list for Environmental & Natural Resources-->
-                <li><a href="#environmental" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Environmental & Natural Resources</a>
-                  <ul id="environmental" class="collapse list-unstyled ">
-                    <li><a href="#">Data Entry</a></li>
-                    <li><a href="#">View Data</a></li>
-                    <li><a href="#">Consolidated Report</a></li>
-                    <li><a href="#">Charts</a></li>
-                  </ul>
-                </li>
-
-                <!--Dropdown list for Health Sector-->
-                <li><a href="#healthsector" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Health Sector</a>
-                  <ul id="healthsector" class="collapse list-unstyled ">
-                    <li><a href="#">Data Entry</a></li>
-                    <li><a href="#">View Data</a></li>
-                    <li><a href="#">Consolidated Report</a></li>
-                    <li><a href="#">Charts</a></li>
-                  </ul>
-                </li>
-
-                <!--Dropdown list for Education Sector-->
-                <li><a href="#educationsector" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Education Sector</a>
-                  <ul id="educationsector" class="collapse list-unstyled ">
-                    <li><a href="#">Data Entry</a></li>
-                    <li><a href="#">View Data</a></li>
-                    <li><a href="#">Consolidated Report</a></li>
-                    <li><a href="#">Charts</a></li>
-                  </ul>
-                </li>
-
-                 <!--Dropdown list for Gender & Family Promotion-->
-                <li><a href="#genderandfamily" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Gender & Family Promotion</a>
-                  <ul id="genderandfamily" class="collapse list-unstyled ">
-                    <li><a href="#">Data Entry</a></li>
-                    <li><a href="#">View Data</a></li>
-                    <li><a href="#">Consolidated Report</a></li>
-                    <li><a href="#">Charts</a></li>
-                  </ul>
-                </li>
-
-                <!--Dropdown list for Water & Sanitation-->
-                <li><a href="#waterandsanitation" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Water & Sanitation</a>
-                  <ul id="waterandsanitation" class="collapse list-unstyled ">
-                    <li><a href="#">Data Entry</a></li>
-                    <li><a href="#">View Data</a></li>
-                    <li><a href="#">Consolidated Report</a></li>
-                    <li><a href="#">Charts</a></li>
-                  </ul>
-                </li>
-
-                <!--Dropdown list for Governance & Decentralization -->
-                <li><a href="#governancesector" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Governance & Decentralization</a>
-                  <ul id="governancesector" class="collapse list-unstyled ">
-                    <li><a href="#">Data Entry</a></li>
-                    <li><a href="#">View Data</a></li>
-                    <li><a href="#">Consolidated Report</a></li>
-                    <li><a href="#">Charts</a></li>
-                  </ul>
-                </li>
+{#                <li><a href="#agricultureandanimal" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i><b style="font-weight: 700;">Agriculture & Animal Sector</b></a>#}
+{#                  <ul id="agricultureandanimal" class="collapse list-unstyled ">#}
+{#                      <li><a href="{% url 'crop_sector'%}">Crops</a></li>#}
+{#                      <li><a href="{% url 'seed_sector' %}">Seeds</a></li>#}
+{#                      <li><a href="{% url 'ubwanikiro_sector' %}">Ubwanikiro</a></li>#}
+{#                      <li><a href="{% url 'terrassis_sector' %}">Unused Terassis construction for soil erosion </a></li>#}
+{#                      <li><a href="{% url 'banana_sector' %}">Banana Rehabilitation cultivated and fertilised</a></li>#}
+{#                      <li><a href="{% url 'improved_seed_sector' %}">AGRICULTURAL INPUTS MINERAL FERTILISER&IMPROVED SEEDS</a></li>#}
+{#                      <li><a href="{% url 'insemination_sector' %}">Insemination</a></li>#}
+{#                      <li><a href="{% url 'inkazizakurikiranwa_sector' %}">Inka Zizakurikiranwa</a></li>#}
+{#                      <li><a href="{% url 'girinka_sector' %}">Girinka</a></li>#}
+{#                      <li><a href="{% url 'training_sector' %}">Trainings</a></li>#}
+{#                      <li><a href="{% url 'fertilizer_sector' %}">Fertilizer</a></li>#}
+{#                      <li><a href="{% url 'vaccination_sector' %}">Vaccination</a></li>#}
+{#                      <li><a href="{% url 'irrigated_sector' %}">Irrigation</a></li>#}
+{#                      <li><a href="{% url 'number_of_pump_sector' %}">Number of Pumps</a></li>#}
+{#                      <li><a href="{% url 'imihigo_sector' %}">Imihigo</a></li>#}
+{#                  </ul>#}
+{#                </li>#}
+{##}
+{#                <!--Dropdown list for Private Sector Development-->#}
+{#                <li><a href="#privatesector" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Private Sector Development</a>#}
+{#                  <ul id="privatesector" class="collapse list-unstyled ">#}
+{#                    <li><a href="#">Data Entry</a></li>#}
+{#                    <li><a href="#">View Data</a></li>#}
+{#                    <li><a href="#">Consolidated Report</a></li>#}
+{#                    <li><a href="#">Charts</a></li>#}
+{#                  </ul>#}
+{#                </li>#}
+{##}
+{#                <!--Dropdown list for Energy Sector-->#}
+{#                <li><a href="#energysector" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Energy Sector</a>#}
+{#                  <ul id="energysector" class="collapse list-unstyled ">#}
+{#                    <li><a href="#">Data Entry</a></li>#}
+{#                    <li><a href="#">View Data</a></li>#}
+{#                    <li><a href="#">Consolidated Report</a></li>#}
+{#                    <li><a href="#">Charts</a></li>#}
+{#                  </ul>#}
+{#                </li>#}
+{##}
+{#                <!--Dropdown list for Social Protection-->#}
+{#                <li><a href="#socialprotection" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Social Protection</a>#}
+{#                  <ul id="socialprotection" class="collapse list-unstyled ">#}
+{#                    <li><a href="#">Data Entry</a></li>#}
+{#                    <li><a href="#">View Data</a></li>#}
+{#                    <li><a href="#">Consolidated Report</a></li>#}
+{#                    <li><a href="#">Charts</a></li>#}
+{#                  </ul>#}
+{#                </li>#}
+{##}
+{#                <!--Dropdown list for Environmental & Natural Resources-->#}
+{#                <li><a href="#environmental" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Environmental & Natural Resources</a>#}
+{#                  <ul id="environmental" class="collapse list-unstyled ">#}
+{#                    <li><a href="#">Data Entry</a></li>#}
+{#                    <li><a href="#">View Data</a></li>#}
+{#                    <li><a href="#">Consolidated Report</a></li>#}
+{#                    <li><a href="#">Charts</a></li>#}
+{#                  </ul>#}
+{#                </li>#}
+{##}
+{#                <!--Dropdown list for Health Sector-->#}
+{#                <li><a href="#healthsector" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Health Sector</a>#}
+{#                  <ul id="healthsector" class="collapse list-unstyled ">#}
+{#                    <li><a href="#">Data Entry</a></li>#}
+{#                    <li><a href="#">View Data</a></li>#}
+{#                    <li><a href="#">Consolidated Report</a></li>#}
+{#                    <li><a href="#">Charts</a></li>#}
+{#                  </ul>#}
+{#                </li>#}
+{##}
+{#                <!--Dropdown list for Education Sector-->#}
+{#                <li><a href="#educationsector" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Education Sector</a>#}
+{#                  <ul id="educationsector" class="collapse list-unstyled ">#}
+{#                    <li><a href="#">Data Entry</a></li>#}
+{#                    <li><a href="#">View Data</a></li>#}
+{#                    <li><a href="#">Consolidated Report</a></li>#}
+{#                    <li><a href="#">Charts</a></li>#}
+{#                  </ul>#}
+{#                </li>#}
+{##}
+{#                 <!--Dropdown list for Gender & Family Promotion-->#}
+{#                <li><a href="#genderandfamily" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Gender & Family Promotion</a>#}
+{#                  <ul id="genderandfamily" class="collapse list-unstyled ">#}
+{#                    <li><a href="#">Data Entry</a></li>#}
+{#                    <li><a href="#">View Data</a></li>#}
+{#                    <li><a href="#">Consolidated Report</a></li>#}
+{#                    <li><a href="#">Charts</a></li>#}
+{#                  </ul>#}
+{#                </li>#}
+{##}
+{#                <!--Dropdown list for Water & Sanitation-->#}
+{#                <li><a href="#waterandsanitation" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Water & Sanitation</a>#}
+{#                  <ul id="waterandsanitation" class="collapse list-unstyled ">#}
+{#                    <li><a href="#">Data Entry</a></li>#}
+{#                    <li><a href="#">View Data</a></li>#}
+{#                    <li><a href="#">Consolidated Report</a></li>#}
+{#                    <li><a href="#">Charts</a></li>#}
+{#                  </ul>#}
+{#                </li>#}
+{##}
+{#                <!--Dropdown list for Governance & Decentralization -->#}
+{#                <li><a href="#governancesector" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Governance & Decentralization</a>#}
+{#                  <ul id="governancesector" class="collapse list-unstyled ">#}
+{#                    <li><a href="#">Data Entry</a></li>#}
+{#                    <li><a href="#">View Data</a></li>#}
+{#                    <li><a href="#">Consolidated Report</a></li>#}
+{#                    <li><a href="#">Charts</a></li>#}
+{#                  </ul>#}
+{#                </li>#}
 
 
                 {#snippets for adding data #}
